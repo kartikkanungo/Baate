@@ -18,6 +18,9 @@
 		896BEF0727A67A4C0079641C /* Window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896BEEFF27A67A4C0079641C /* Window.framework */; };
 		896BEF0827A67A4C0079641C /* Window.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 896BEEFF27A67A4C0079641C /* Window.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		896BEF0E27A67B810079641C /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BEF0D27A67B810079641C /* Window.swift */; };
+		896BEF1027A67C270079641C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BEF0F27A67C270079641C /* Presenter.swift */; };
+		896BEF1327A67CF00079641C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BEF1127A67CED0079641C /* Router.swift */; };
+		896BEF1527A67D360079641C /* Buidler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BEF1427A67D360079641C /* Buidler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		896BEF0127A67A4C0079641C /* Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
 		896BEF0227A67A4C0079641C /* Window.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Window.docc; sourceTree = "<group>"; };
 		896BEF0D27A67B810079641C /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		896BEF0F27A67C270079641C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		896BEF1127A67CED0079641C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		896BEF1427A67D360079641C /* Buidler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buidler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,9 @@
 				896BEF0127A67A4C0079641C /* Window.h */,
 				896BEF0227A67A4C0079641C /* Window.docc */,
 				896BEF0D27A67B810079641C /* Window.swift */,
+				896BEF1427A67D360079641C /* Buidler.swift */,
+				896BEF1127A67CED0079641C /* Router.swift */,
+				896BEF0F27A67C270079641C /* Presenter.swift */,
 			);
 			path = Window;
 			sourceTree = "<group>";
@@ -251,8 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				896BEF1327A67CF00079641C /* Router.swift in Sources */,
+				896BEF1027A67C270079641C /* Presenter.swift in Sources */,
 				896BEF0327A67A4C0079641C /* Window.docc in Sources */,
 				896BEF0E27A67B810079641C /* Window.swift in Sources */,
+				896BEF1527A67D360079641C /* Buidler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
