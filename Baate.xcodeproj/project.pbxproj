@@ -13,7 +13,35 @@
 		896BEEED27A676BE0079641C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896BEEEB27A676BE0079641C /* Main.storyboard */; };
 		896BEEEF27A676BF0079641C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896BEEEE27A676BF0079641C /* Assets.xcassets */; };
 		896BEEF227A676BF0079641C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896BEEF027A676BF0079641C /* LaunchScreen.storyboard */; };
+		896BEF0327A67A4C0079641C /* Window.docc in Sources */ = {isa = PBXBuildFile; fileRef = 896BEF0227A67A4C0079641C /* Window.docc */; };
+		896BEF0427A67A4C0079641C /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 896BEF0127A67A4C0079641C /* Window.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		896BEF0727A67A4C0079641C /* Window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896BEEFF27A67A4C0079641C /* Window.framework */; };
+		896BEF0827A67A4C0079641C /* Window.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 896BEEFF27A67A4C0079641C /* Window.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		896BEF0527A67A4C0079641C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 896BEEDA27A676BE0079641C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 896BEEFE27A67A4C0079641C;
+			remoteInfo = Window;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		896BEF0C27A67A4C0079641C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				896BEF0827A67A4C0079641C /* Window.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		896BEEE227A676BE0079641C /* Baate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +52,21 @@
 		896BEEEE27A676BF0079641C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		896BEEF127A676BF0079641C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		896BEEF327A676BF0079641C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		896BEEFF27A67A4C0079641C /* Window.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Window.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		896BEF0127A67A4C0079641C /* Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		896BEF0227A67A4C0079641C /* Window.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Window.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		896BEEDF27A676BE0079641C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896BEF0727A67A4C0079641C /* Window.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896BEEFC27A67A4C0079641C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				896BEEE227A676BE0079641C /* Baate.app */,
+				896BEEFF27A67A4C0079641C /* Window.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +96,7 @@
 		896BEEE427A676BE0079641C /* Baate */ = {
 			isa = PBXGroup;
 			children = (
+				896BEEF927A679C30079641C /* Modules */,
 				896BEEE527A676BE0079641C /* AppDelegate.swift */,
 				896BEEE727A676BE0079641C /* SceneDelegate.swift */,
 				896BEEE927A676BE0079641C /* ViewController.swift */,
@@ -67,7 +108,35 @@
 			path = Baate;
 			sourceTree = "<group>";
 		};
+		896BEEF927A679C30079641C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				896BEF0027A67A4C0079641C /* Window */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		896BEF0027A67A4C0079641C /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				896BEF0127A67A4C0079641C /* Window.h */,
+				896BEF0227A67A4C0079641C /* Window.docc */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		896BEEFA27A67A4C0079641C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896BEF0427A67A4C0079641C /* Window.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		896BEEE127A676BE0079641C /* Baate */ = {
@@ -77,15 +146,35 @@
 				896BEEDE27A676BE0079641C /* Sources */,
 				896BEEDF27A676BE0079641C /* Frameworks */,
 				896BEEE027A676BE0079641C /* Resources */,
+				896BEF0C27A67A4C0079641C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				896BEF0627A67A4C0079641C /* PBXTargetDependency */,
 			);
 			name = Baate;
 			productName = Baate;
 			productReference = 896BEEE227A676BE0079641C /* Baate.app */;
 			productType = "com.apple.product-type.application";
+		};
+		896BEEFE27A67A4C0079641C /* Window */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 896BEF0927A67A4C0079641C /* Build configuration list for PBXNativeTarget "Window" */;
+			buildPhases = (
+				896BEEFA27A67A4C0079641C /* Headers */,
+				896BEEFB27A67A4C0079641C /* Sources */,
+				896BEEFC27A67A4C0079641C /* Frameworks */,
+				896BEEFD27A67A4C0079641C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Window;
+			productName = Window;
+			productReference = 896BEEFF27A67A4C0079641C /* Window.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +187,9 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					896BEEE127A676BE0079641C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					896BEEFE27A67A4C0079641C = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -116,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				896BEEE127A676BE0079641C /* Baate */,
+				896BEEFE27A67A4C0079641C /* Window */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +221,13 @@
 				896BEEF227A676BF0079641C /* LaunchScreen.storyboard in Resources */,
 				896BEEEF27A676BF0079641C /* Assets.xcassets in Resources */,
 				896BEEED27A676BE0079641C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		896BEEFD27A67A4C0079641C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +244,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		896BEEFB27A67A4C0079641C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896BEF0327A67A4C0079641C /* Window.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		896BEF0627A67A4C0079641C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 896BEEFE27A67A4C0079641C /* Window */;
+			targetProxy = 896BEF0527A67A4C0079641C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		896BEEEB27A676BE0079641C /* Main.storyboard */ = {
@@ -297,6 +413,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +442,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +453,72 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		896BEF0A27A67A4C0079641C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PZW856HA3U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kartikkanungo.Window;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		896BEF0B27A67A4C0079641C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PZW856HA3U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kartikkanungo.Window;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -355,6 +539,15 @@
 			buildConfigurations = (
 				896BEEF727A676BF0079641C /* Debug */,
 				896BEEF827A676BF0079641C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		896BEF0927A67A4C0079641C /* Build configuration list for PBXNativeTarget "Window" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896BEF0A27A67A4C0079641C /* Debug */,
+				896BEF0B27A67A4C0079641C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
