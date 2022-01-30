@@ -17,6 +17,7 @@
 		896BEF0427A67A4C0079641C /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 896BEF0127A67A4C0079641C /* Window.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		896BEF0727A67A4C0079641C /* Window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896BEEFF27A67A4C0079641C /* Window.framework */; };
 		896BEF0827A67A4C0079641C /* Window.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 896BEEFF27A67A4C0079641C /* Window.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		896BEF0E27A67B810079641C /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BEF0D27A67B810079641C /* Window.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		896BEEFF27A67A4C0079641C /* Window.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Window.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		896BEF0127A67A4C0079641C /* Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
 		896BEF0227A67A4C0079641C /* Window.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Window.docc; sourceTree = "<group>"; };
+		896BEF0D27A67B810079641C /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				896BEF0127A67A4C0079641C /* Window.h */,
 				896BEF0227A67A4C0079641C /* Window.docc */,
+				896BEF0D27A67B810079641C /* Window.swift */,
 			);
 			path = Window;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				896BEF0327A67A4C0079641C /* Window.docc in Sources */,
+				896BEF0E27A67B810079641C /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +405,7 @@
 		896BEEF727A676BF0079641C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -430,6 +435,7 @@
 		896BEEF827A676BF0079641C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
